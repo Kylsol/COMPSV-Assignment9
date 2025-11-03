@@ -1,0 +1,15 @@
+Why is a graph the right structure to represent a social network?
+A graph makes sense because people can connect to each other in any direction, just like in real life. 
+There’s no order or levels when it comes to friendships. Everyone can be connected to multiple people at the same time, 
+and that’s exactly how graphs work.
+
+Why wouldn’t a list or tree work as well for this?
+A list and a tree are way too limited for this. A list is just one straight line, and a tree is like a parent → child hierarchy. 
+But friendships don’t follow a chain or a ranking. People don’t follow a single path. So those structures wouldn’t 
+match how social networks actually work.
+
+
+What performance or structural trade-offs did you notice when adding friends or printing the network?
+Adding friends is super simple because it’s just adding each person to the other person’s friend list. 
+But when printing the whole network, we have to loop through everyone and go through all their friends. 
+So printing becomes more expensive the bigger the network gets. It’s a trade-off: easy adding, but heavier printing.
